@@ -1,0 +1,174 @@
+:root {
+    --primary: #1c1c1e;
+    --secondary: #4d4d4d;
+    --accent: #3a7bd5;
+    --background: #f8f9fa;
+    --white: #ffffff;
+  }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--primary);
+    line-height: 1.8;
+  }
+  header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .logo img {
+    height: 40px;
+  }
+  .logo span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+  }
+  nav a {
+    margin-left: 24px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+  nav a:hover {
+    color: var(--accent);
+  }
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: var(--white);
+    flex-wrap: wrap;
+  }
+  .hero-content {
+    flex: 1;
+    max-width: 600px;
+    margin-left: 250px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: left;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    color: #dfe6f1;
+    text-align: left;
+  }
+  .hero img {
+    flex: 1;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    margin-right: 130px; /* ขยับภาพไปทางซ้ายเพิ่ม */
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+  .section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.035);
+    margin-top: 40px;
+  }
+  .section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.25rem;
+    margin-bottom: 16px;
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+    padding-bottom: 6px;
+    font-weight: 700;
+  }
+  .section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 48px;       /* เพิ่มระยะห่างด้านบนมากขึ้น */
+    margin-bottom: 20px;    /* เพิ่มช่องว่างด้านล่าง */
+    color: var(--primary);
+    font-family: 'Inter', sans-serif;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+  }
+
+  .section p, .section li {
+    font-size: 1.1rem;
+    color: var(--secondary);
+    font-weight: 400;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li::before {
+    content: '✔';
+    color: var(--accent);
+    margin-right: 10px;
+  }
+  .founders {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .founder {
+    flex: 1 1 200px;
+    text-align: center;
+  }
+  .founder img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+  .founder h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .founder span {
+    color: var(--secondary);
+    font-size: 1rem;
+  }
+  .contact-links {
+    margin-top: 20px;
+  }
+  .contact-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  footer {
+    background: var(--white);
+    text-align: center;
+    padding: 30px;
+    color: var(--secondary);
+    font-size: 0.9rem;
+    border-top: 1px solid #e1e4e8;
+    margin-top: 40px;
+  }
