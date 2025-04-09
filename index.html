@@ -6,33 +6,37 @@
   <title>Thanapat Butsai | Portfolio</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
-<body>
-  <button id="theme-toggle" onclick="toggleTheme()">🌗</button>
+<header class="site-header">
+  <div class="top-tagline">
+    <p>Portfolio website by Thanapat Butsai</p>
+  </div>
 
-  <header class="hero">
-    <div class="hero-content">
+  <div class="navbar">
+    <div class="navbar-left">
       <img src="images/thana-image.png" alt="Thanapat Butsai" class="profile-img">
-      <div>
+      <div class="name-title">
         <h1>Thanapat Butsai</h1>
-        <p>Computer Science Student | AI & Full-Stack Developer</p>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <p class="subtitle">Computer Science | AI & Full-Stack Developer</p>
       </div>
     </div>
-  </header>
+
+    <div class="navbar-right">
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" onclick="toggleTheme()">🌗</button>
+    </div>
+  </div>
+</header>
+
 
   <main class="container">
-    
-    
-<section id="about">
+
+<section id="about" class="boxed">
   <h2>About Me</h2>
-  <p>I'm Thanapat Butsai, a senior Computer Science student at Kasetsart University with a strong passion for AI, full-stack development, and 3D computer vision. Over the years, I've combined my technical skills and creative mindset to build web applications, work on machine learning pipelines, and explore cutting-edge research in 3D object classification during my internship at Yuan Ze University.</p>
-
-  <p>I believe in continuous learning through real-world projects. I’ve led and contributed to applications like virtual try-on glasses, stock prediction systems, and Java-based marketplace platforms. I’m driven by a mix of curiosity, creativity, and a desire to create things that have meaningful impact.</p>
-
+  <p>I'm Thanapat Butsai, a senior Computer Science student at Kasetsart University with a strong passion for AI, full-stack development, and 3D computer vision...</p>
   <h3>Relevant Courses</h3>
   <ul>
     <li><strong>Software Engineering</strong> – Learned software design, architecture, and system development practices.</li>
@@ -44,82 +48,74 @@
   </ul>
 </section>
 
-<section id="experience">
-      <h2>Work Experience</h2>
-      <div class="project">
-        <img src="images/yzu.jpg" alt="Yuan Ze University">
-        <div>
-          <h3>Research Assistant Intern — Yuan Ze University</h3>
-          <p><em>Taoyuan, Taiwan (Sept 2024 – Jan 2025)</em></p>
-          <ul>
-            <li>Conducted research on 3D Object-Level Classification, analyzing internal structures of 3D models.</li>
-            <li>Developed a robust pipeline for preprocessing, feature extraction, and validation using Python, Trimesh, and PyTorch.</li>
-            <li>Implemented and optimized ML/DL models for 3D model classification tasks.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-      <h2>About Me</h2>
-      <p>I'm a senior Computer Science student at Kasetsart University. I have experience in AI, full-stack development, and 3D modeling. I interned as a Research Assistant at Yuan Ze University working on 3D Object-Level Classification using Python and PyTorch.</p>
+<section id="experience" >
+  <h2>Work Experience</h2>
+  <div class="gallery">
+    <img src="images/yzu.jpg" alt="YZU 1">
+    <img src="images/yzu.jpg" alt="YZU 2">
+    <img src="images/yzu.jpg" alt="YZU 3">
+    <img src="images/yzu.jpg" alt="YZU 4">
+  </div>
+    <div>
+      <h3>Research Assistant Intern — Yuan Ze University</h3>
+      <p><em>Taoyuan, Taiwan (Sept 2024 – Jan 2025)</em></p>
       <ul>
-        <li><strong>Education:</strong> B.Sc. in Computer Science, Kasetsart University (2021–2025)</li>
-        <li><strong>Internship:</strong> Yuan Ze University (3D Model Classification, Sept 2024 – Jan 2025)</li>
-        <li><strong>Languages:</strong> Python, Java</li>
-        <li><strong>Frameworks & Tools:</strong> Spring, React, Mediapipe, Git, MySQL</li>
-        <li><strong>ML & AI:</strong> Scikit-learn, PyTorch</li>
-        <li><strong>Other:</strong> Salesforce Trailblazer Rank: Mountaineer (72,175 pts)</li>
+        <li>Conducted research on 3D Object-Level Classification, analyzing internal structures of 3D models.</li>
+        <li>Developed a robust pipeline for preprocessing, feature extraction, and validation using Python, Trimesh, and PyTorch.</li>
+        <li>Implemented and optimized ML/DL models for 3D model classification tasks.</li>
       </ul>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <img src="images/project-glasses-1.png" alt="Visual Try-On">
-        <div>
-          <h3>Visual Try-On Web App</h3>
-          <p>Developed a PWA for trying on 3D glasses using face tracking and OBJ rendering.</p>
-          <p><em>React, Mediapipe, OBJ models, Express.js</em></p>
-        </div>
+<section id="projects" class="boxed">
+  <h2>Projects</h2>
+  <div class="project">
+    <img src="images/project-glasses-1.png" alt="Visual Try-On">
+    <div>
+      <h3>Visual Try-On Web App</h3>
+      <p>Developed a PWA for trying on 3D glasses using face tracking and OBJ rendering.</p>
+      <p><em>React, Mediapipe, OBJ models, Express.js</em></p>
+      <div class="project-links">
+        <a href="https://github.com/TanapatButsai/senior-project-3d-glasses?tab=readme-ov-file" target="_blank">🔗 GitHub</a>
       </div>
-      <div class="project">
-        <img src="images/temp.png" alt="Stock Forecast">
-        <div>
-          <h3>Apple Stock Forecasting</h3>
-          <p>Applied ML techniques to predict Apple stock performance.</p>
-          <p><em>Scikit-learn, Pandas, Google Colab</em></p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="images/temp.png" alt="Crownseal App">
-        <div>
-          <h3>Crownseal Maintenance Web App</h3>
-          <p>Built a reporting system with Java Spring & MySQL including UML diagrams.</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="images/temp.png" alt="Food Ordering">
-        <div>
-          <h3>Food Ordering Website</h3>
-          <p>Automated ordering platform with test pipelines using Selenium and Docker.</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="images/temp.png" alt="Marketplace Software">
-        <div>
-          <h3>E-Commerce Marketplace Software</h3>
-          <p>JavaFX desktop e-commerce app with Git-based version control.</p>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+  <div class="project">
+    <img src="images/temp.png" alt="Stock Forecast">
+    <div>
+      <h3>Apple Stock Forecasting</h3>
+      <p>Applied ML techniques to predict Apple stock performance.</p>
+      <p><em>Scikit-learn, Pandas, Google Colab</em></p>
+    </div>
+  </div>
+  <div class="project">
+    <img src="images/temp.png" alt="Visual Try-On">
+    <div>
+      <h3>Visual Try-On Web App</h3>
+      <p>Developed a PWA for trying on 3D glasses using face tracking and OBJ rendering.</p>
+      <p><em>React, Mediapipe, OBJ models, Express.js</em></p>
+    </div>
+  </div>
+  <div class="project">
+    <img src="images/temp.png" alt="Stock Forecast">
+    <div>
+      <h3>Apple Stock Forecasting</h3>
+      <p>Applied ML techniques to predict Apple stock performance.</p>
+      <p><em>Scikit-learn, Pandas, Google Colab</em></p>
+    </div>
+  </div>
+</section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:thanapatbutsai@gmail.com">thanapatbutsai@gmail.com</a></p>
-      <p>Phone: +66 91-723-7171</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/thanapatbutsai" target="_blank">linkedin.com/in/thanapatbutsai</a></p>
-    </section>
-  </main>
+<section id="contact" class="boxed">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:thanapatbutsai@gmail.com">thanapatbutsai@gmail.com</a></p>
+  <p>Phone: +66 91-723-7171</p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/thanapatbutsai" target="_blank">linkedin</a></p>
+  <p>GitHub: <a href="https://github.com/TanapatButsai" target="_blank">GitHub</a></p>
+
+</section>
+</main>
 
   <footer>
     <p>&copy; 2025 Thanapat Butsai. All rights reserved.</p>
