@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+  <button id="theme-toggle" onclick="toggleTheme()">🌗</button>
+
   <header class="hero">
     <div class="hero-content">
       <img src="images/thana-image.png" alt="Thanapat Butsai" class="profile-img">
@@ -88,5 +90,13 @@
   <footer>
     <p>&copy; 2025 Thanapat Butsai. All rights reserved.</p>
   </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    }
+  </script>
 </body>
 </html>
