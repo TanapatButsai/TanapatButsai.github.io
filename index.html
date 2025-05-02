@@ -8,247 +8,376 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="navbar">
-        <div class="navbar-left">
-          <img src="images\Thanapat_picture.jpeg" alt="Thanapat Butsai" class="profile-img">
-          <div class="name-title">
-            <h1>Thanapat Butsai</h1>
-            <p class="subtitle">Computer Science | AI & Full-Stack Developer</p>
-          </div>
-        </div>
-
-        <div class="navbar-right">
-          <nav class="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          <button id="theme-toggle" aria-label="Toggle theme">
-            <i class="fas fa-moon"></i>
-          </button>
-        </div>
+  <div class="welcome-page" id="welcome-page">
+    <div class="welcome-content">
+      <div class="welcome-image-container">
+        <img src="images\Thanapat_picture.jpeg?height=300&width=300" alt="Thanapat Butsai" class="welcome-image" id="profile-img">
       </div>
+      <h1 class="welcome-name">THANAPAT BUTSAI</h1>
+      <p class="welcome-title">Computer Science Student from Kasetsart University</p>
+      <div class="welcome-social">
+        <a href="mailto:thanapatbutsai@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/thanapatbutsai" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/TanapatButsai" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <button id="enter-portfolio" class="welcome-button">View Portfolio <i class="fas fa-arrow-right"></i></button>
     </div>
-  </header>
+  </div>
 
-  <main class="container">
-    <section id="hero">
-      <div class="hero-content">
-        <h2>Building <span class="accent">intelligent</span> solutions with code</h2>
-        <p>Computer Science student specializing in AI and full-stack development</p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
-        </div>
-      </div>
-    </section>
+  <div class="portfolio-content" id="portfolio-content" style="display: none;">
+    <header class="site-header">
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar-left">
+            <img src="images\Thanapat_picture.jpeg?height=80&width=80" alt="Thanapat Butsai" class="profile-img">
+            <div class="name-title">
+              <h1>Thanapat Butsai</h1>
+              <p class="subtitle">Computer Science | AI & Full-Stack Developer</p>
+            </div>
+          </div>
 
-    <section id="about" class="section-container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>I'm Thanapat Butsai, a senior Computer Science student at Kasetsart University with a strong passion for AI, full-stack development, and 3D computer vision.</p>
-          <p>My focus is on creating intelligent applications that solve real-world problems through innovative technology solutions.</p>
-        </div>
-        <div class="skills">
-          <h3>Technical Skills</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">PyTorch</span>
-            <span class="skill-tag">Computer Vision</span>
-            <span class="skill-tag">3D Modeling</span>
-            <span class="skill-tag">Machine Learning</span>
+          <div class="navbar-right">
+            <nav class="nav-links">
+              <a href="#about">About</a>
+              <a href="#education">Education</a>
+              <a href="#experience">Experience</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </nav>
+            <div class="dropdown">
+              <button class="dropdown-toggle nav-dropdown">
+                <i class="fas fa-download"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item" id="download-resume">
+                  <i class="fas fa-file-alt"></i> Resume
+                </a>
+                <a href="#" class="dropdown-item" id="download-transcript">
+                  <i class="fas fa-graduation-cap"></i> Transcript
+                </a>
+              </div>
+            </div>
+            <button id="theme-toggle" aria-label="Toggle theme">
+              <i class="fas fa-moon"></i>
+            </button>
           </div>
         </div>
       </div>
+    </header>
+
+    <main class="container">
+      <section id="hero">
+        <div class="hero-content">
+          <h2>Building <span class="accent">intelligent</span> solutions with code</h2>
+          <p>Computer Science student specializing in AI and full-stack development</p>
+        </div>
       
-      <div class="education">
-        <h3>Relevant Courses</h3>
-        <ul class="course-list">
-          <li><strong>Software Engineering</strong> – Learned software design, architecture, and system development practices.</li>
-          <li><strong>Artificial Intelligence</strong> – Gained hands-on experience in AI models, particularly in computer vision tasks.</li>
-          <li><strong>Software Testing and Verification</strong> – Studied software quality assurance, test planning, and automation.</li>
-          <li><strong>Business Data Dimension and Report Management</strong> – Worked with data analysis and reporting tools in business contexts.</li>
-          <li><strong>Information Quality Management</strong> – Focused on managing and assessing data quality in information systems.</li>
-          <li><strong>Financial and Banking Information Technology</strong> – Explored IT systems used in financial and banking sectors.</li>
-        </ul>
+        <section id="gallery" class="section-container">
+          <div class="gallery-container">
+            <div class="gallery-wrapper">
+              <div class="gallery-track">
+                <!-- First set of images -->
+                <div class="gallery-slide">
+                  <img src="images/gallery/temp.png" alt="Gallery Image 1" class="gallery-image">
+                </div>
+                <div class="gallery-slide">
+                  <img src="images/gallery/temp.png" alt="Gallery Image 2" class="gallery-image">
+                </div>
+                <div class="gallery-slide">
+                  <img src="images/gallery/temp.png" alt="Gallery Image 3" class="gallery-image">
+                </div>
+                <div class="gallery-slide">
+                  <img src="images/gallery/temp.png" alt="Gallery Image 4" class="gallery-image">
+                </div>
+                
+                <!-- Second set of images (duplicates for continuous scrolling) -->
+                <div class="gallery-slide">
+                  <img src="images/gallery/temp.png" alt="Gallery Image 5" class="gallery-image">
+                </div>
+                <div class="gallery-slide">
+                  <img src="images/gallery/temp.png" alt="Gallery Image 6" class="gallery-image">
+                </div>
+                <div class="gallery-slide">
+                  <img src="images/gallery/temp.png" alt="Gallery Image 7" class="gallery-image">
+                </div>
+                <div class="gallery-slide">
+                  <img src="images/gallery/temp.png" alt="Gallery Image 8" class="gallery-image">
+                </div>
+              </div>
+            </div>
+            
+            <div class="gallery-controls">
+              <!-- <button class="gallery-control prev" aria-label="Previous images">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="gallery-indicators">
+                <span class="gallery-indicator active"></span>
+                <span class="gallery-indicator"></span>
+              </div> -->
+              <!-- <button class="gallery-control next" aria-label="Next images">
+                <i class="fas fa-chevron-right"></i>
+              </button> -->
+            </div>
+          </div>
+        </section>
+
+      </section>
+      <section id="about" class="section-container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>I'm Thanapat Butsai, a Computer Science student at Kasetsart University with a strong passion for AI, full-stack development, and 3D computer vision.</p>
+            <p>My focus is on creating intelligent applications that solve real-world problems through innovative technology solutions.</p>
+          </div>
+          <div class="skills">
+            <h3>Technical Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Spring Framework</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Mediapipe</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="additional-info">
+          <h3>Additional Information</h3>
+          <ul class="info-list">
+            <li><strong>Salesforce Trailblazer Rank:</strong> Mountaineer (72,175 Points)</li>
+            <li><strong>Languages:</strong> Thai (Native), English (Intermediate - CEFR B1)</li>
+            <li><strong>Website:</strong> <a href="https://tanapatbutsai.github.io" target="_blank">tanapatbutsai.github.io</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="education" class="section-container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-card">
+          <div class="education-header">
+            <h3>Kasetsart University</h3>
+            <span class="education-year">2021 - 2025</span>
+          </div>
+          <p class="education-degree">Bachelor of Science, Major in Computer Science</p>
+          <p class="education-location"><i class="fas fa-map-marker-alt"></i> Bangkok, Thailand</p>
+        </div>
+
+        <div class="education-card">
+          <div class="education-header">
+            <h3>Horwang School</h3>
+            <span class="education-year">2017 - 2020</span>
+          </div>
+          <p class="education-degree">Science, Technology, Engineering, and Mathematics (STEM)</p>
+          <p class="education-location"><i class="fas fa-map-marker-alt"></i> Bangkok, Thailand</p>
+        </div>
+      </section>
+
+      <section id="experience" class="section-container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3>Research Assistant Intern</h3>
+            <span class="company">Yuan Ze University</span>
+          </div>
+          <p class="experience-meta"><i class="fas fa-map-marker-alt"></i> Taoyuan, Taiwan | <i class="fas fa-calendar-alt"></i> September 2024 – January 2025</p>
+          <ul class="experience-details">
+            <li>Conducted research on 3D Object-Level Classification, analyzing the internal structures of 3D models.</li>
+            <li>Developed a robust pipeline for data preprocessing, feature extraction, and 3D object validation using Python, Trimesh, and PyTorch.</li>
+            <li>Optimized and implemented machine learning and deep learning models for 3D model classification tasks.</li>
+          </ul>
+          <div class="experience-gallery">
+            <img src="images\yzu.jpg?height=200&width=300" alt="YZU Research 1" class="gallery-img">
+            <img src="images\yzu.jpg?height=200&width=300" alt="YZU Research 2" class="gallery-img">
+            <img src="images\yzu.jpg?height=200&width=300" alt="YZU Research 3" class="gallery-img">
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=300&width=500" alt="Visual Try-On Web App">
+            </div>
+            <div class="project-content">
+              <h3>Visual Try-On Web Application</h3>
+              <p>Developed a progressive web application for 3D glasses try-on, integrating face tracking and rendering.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Mediapipe</span>
+                <span class="tech-tag">OBJ models</span>
+                <span class="tech-tag">Express.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/TanapatButsai/senior-project-3d-glasses" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=300&width=500" alt="Apple Stock Forecasting">
+            </div>
+            <div class="project-content">
+              <h3>Apple Stock Forecasting</h3>
+              <p>Applied machine learning techniques to predict Apple's stock performance.</p>
+              <div class="project-tech">
+                <span class="tech-tag">VSCode</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Google Colab</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=300&width=500" alt="Crownseal Maintenance Web App">
+            </div>
+            <div class="project-content">
+              <h3>Crownseal Maintenance Web Application</h3>
+              <p>Designed and built a maintenance reporting web application, focusing on system analysis and software construction.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Java Spring Framework</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">UML</span>
+                <span class="tech-tag">Business Process Diagrams</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=300&width=500" alt="Food Ordering Website">
+            </div>
+            <div class="project-content">
+              <h3>Food Ordering Website</h3>
+              <p>Developed an automated food ordering platform with testing and deployment pipelines.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Jira</span>
+                <span class="tech-tag">Java Spring Framework</span>
+                <span class="tech-tag">Selenium</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=300&width=500" alt="E-Commerce Marketplace">
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Marketplace Software</h3>
+              <p>Built a JavaFX-based e-commerce application with version control and collaboration features.</p>
+              <div class="project-tech">
+                <span class="tech-tag">IntelliJ IDEA</span>
+                <span class="tech-tag">JavaFX</span>
+                <span class="tech-tag">Git</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:thanapatbutsai@gmail.com">thanapatbutsai@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+66 91-723-7171</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Bangkok, Thailand</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <a href="https://linkedin.com/in/thanapatbutsai" target="_blank">linkedin.com/in/thanapatbutsai</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/TanapatButsai" target="_blank">github.com/TanapatButsai</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-globe"></i>
+              <a href="https://tanapatbutsai.github.io" target="_blank">tanapatbutsai.github.io</a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Thanapat Butsai. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com/TanapatButsai" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/thanapatbutsai" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
       </div>
-    </section>
+    </footer>
+  </div>
 
-    <section id="experience" class="section-container">
-      <h2 class="section-title">Work Experience</h2>
-      <div class="experience-card">
-        <div class="experience-header">
-          <h3>Research Assistant Intern</h3>
-          <span class="company">Yuan Ze University</span>
-        </div>
-        <p class="experience-meta"><i class="fas fa-map-marker-alt"></i> Taoyuan, Taiwan | <i class="fas fa-calendar-alt"></i> Sept 2024 – Jan 2025</p>
-        <ul class="experience-details">
-          <li>Conducted research on 3D Object-Level Classification, analyzing internal structures of 3D models.</li>
-          <li>Developed a robust pipeline for preprocessing, feature extraction, and validation using Python, Trimesh, and PyTorch.</li>
-          <li>Implemented and optimized ML/DL models for 3D model classification tasks.</li>
-        </ul>
-        <div class="experience-gallery">
-          <img src="images\yzu.jpg?height=200&width=300" alt="YZU Research 1" class="gallery-img">
-          <img src="images\yzu.jpg?height=200&width=300" alt="YZU Research 2" class="gallery-img">
-          <img src="images\yzu.jpg?height=200&width=300" alt="YZU Research 3" class="gallery-img">
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section-container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images\project-glasses-1.png?height=300&width=500" alt="Visual Try-On Web App">
-          </div>
-          <div class="project-content">
-            <h3>Visual Try-On Web App</h3>
-            <p>Developed a PWA for trying on 3D glasses using face tracking and OBJ rendering.</p>
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Mediapipe</span>
-              <span class="tech-tag">OBJ models</span>
-              <span class="tech-tag">Express.js</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/TanapatButsai/senior-project-3d-glasses" target="_blank" class="project-link">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <a href="#" class="project-link">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images\project-glasses-1.png?height=300&width=500" alt="Apple Stock Forecasting">
-          </div>
-          <div class="project-content">
-            <h3>Apple Stock Forecasting</h3>
-            <p>Applied ML techniques to predict Apple stock performance using historical data and market indicators.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Scikit-learn</span>
-              <span class="tech-tag">Pandas</span>
-              <span class="tech-tag">Google Colab</span>
-              <span class="tech-tag">Data Visualization</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images\project-glasses-2.png?height=300&width=500" alt="Project 3">
-          </div>
-          <div class="project-content">
-            <h3>3D Computer Vision Project</h3>
-            <p>Implemented advanced computer vision algorithms for 3D object recognition and classification.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">OpenCV</span>
-              <span class="tech-tag">3D Modeling</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images\project-glasses-2.png?height=300&width=500" alt="Project 4">
-          </div>
-          <div class="project-content">
-            <h3>Full-Stack Web Application</h3>
-            <p>Developed a complete web application with user authentication, database integration, and responsive UI.</p>
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">Express</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <a href="#" class="project-link">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section-container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:thanapatbutsai@gmail.com">thanapatbutsai@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <span>+66 91-723-7171</span>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-linkedin"></i>
-            <a href="https://linkedin.com/in/thanapatbutsai" target="_blank">linkedin.com/in/thanapatbutsai</a>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/TanapatButsai" target="_blank">github.com/TanapatButsai</a>
-          </div>
-        </div>
-        <div class="contact-form">
-          <form id="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Thanapat Butsai. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://github.com/TanapatButsai" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/thanapatbutsai" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
+  <!-- Profile Photo Modal -->
+  <div id="photo-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img id="modal-img" src="/placeholder.svg?height=400&width=400" alt="Thanapat Butsai" class="modal-image">
     </div>
-  </footer>
-
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
