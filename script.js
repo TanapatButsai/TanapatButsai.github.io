@@ -267,12 +267,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Use the correct path to your gallery images
       const imagePaths = [
-        "images/gallery/temp.png",
-        "images/gallery/temp.png",
-        "images/gallery/temp.png",
-        "images/gallery/temp.png",
-        "images/gallery/temp.png",
-        "images/gallery/temp.png",
+        "images/gallery/ieqw.JPG",
+        "images/gallery/IMG_3462.JPG",
+        "images/gallery/IMG_4752.JPG",
+        "images/gallery/IMG_5510.JPG",
+        "images/gallery/IMG_6134.JPG",
+        "images/project-glasses-1.png",
         "images/gallery/temp.png",
         "images/gallery/temp.png",
       ]
@@ -334,48 +334,24 @@ document.addEventListener("DOMContentLoaded", () => {
   // Resume download
   if (downloadResumeLink) {
     downloadResumeLink.addEventListener("click", (e) => {
-      e.preventDefault()
+      // No need to prevent default since we want the natural download behavior
+      // The href and download attributes in the HTML will handle the download
+      console.log("Resume download initiated")
 
-      // In a real implementation, you would set the actual file path
-      const resumeFilePath = "path/to/your/resume.pdf"
-
-      // Create a temporary anchor element to trigger the download
-      const tempLink = document.createElement("a")
-      tempLink.href = resumeFilePath
-      tempLink.setAttribute("download", "Thanapat_Butsai_Resume.pdf")
-
-      // Simulate click to trigger download
-      // In a real implementation, this would download the actual file
-      // For now, show an alert
-      alert("Resume download would start now. In production, replace this with the actual file path.")
-
-      // document.body.appendChild(tempLink);
-      // tempLink.click();
-      // document.body.removeChild(tempLink);
+      // We don't need to create a temporary link or show an alert
+      // since the HTML already has the correct attributes
     })
   }
 
   // Transcript download
   if (downloadTranscriptLink) {
     downloadTranscriptLink.addEventListener("click", (e) => {
-      e.preventDefault()
+      // No need to prevent default since we want the natural download behavior
+      // The href and download attributes in the HTML will handle the download
+      console.log("Transcript download initiated")
 
-      // In a real implementation, you would set the actual file path
-      const transcriptFilePath = "path/to/your/transcript.pdf"
-
-      // Create a temporary anchor element to trigger the download
-      const tempLink = document.createElement("a")
-      tempLink.href = transcriptFilePath
-      tempLink.setAttribute("download", "Thanapat_Butsai_Transcript.pdf")
-
-      // Simulate click to trigger download
-      // In a real implementation, this would download the actual file
-      // For now, show an alert
-      alert("Transcript download would start now. In production, replace this with the actual file path.")
-
-      // document.body.appendChild(tempLink);
-      // tempLink.click();
-      // document.body.removeChild(tempLink);
+      // We don't need to create a temporary link or show an alert
+      // since the HTML already has the correct attributes
     })
   }
 
