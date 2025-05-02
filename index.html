@@ -4,6 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Thanapat Butsai | Portfolio</title>
+  
+  <!-- PWA Meta Tags -->
+  <meta name="description" content="Portfolio of Thanapat Butsai, Computer Science Student from Kasetsart University">
+  <meta name="theme-color" content="#60a5fa">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="TB Portfolio">
+  
+  <!-- PWA Links -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/images/Logo.png">
+  
+  <!-- Existing Links -->
   <link rel="stylesheet" href="styles.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -11,7 +24,7 @@
   <div class="welcome-page" id="welcome-page">
     <div class="welcome-content">
       <div class="welcome-image-container">
-        <img src="images\Thanapat_picture.jpeg?height=300&width=300" alt="Thanapat Butsai" class="welcome-image" id="profile-img">
+        <img src="images/Thanapat_picture.jpeg" alt="Thanapat Butsai" class="welcome-image" id="profile-img">
       </div>
       <h1 class="welcome-name">THANAPAT BUTSAI</h1>
       <p class="welcome-title">Computer Science Student from Kasetsart University</p>
@@ -382,6 +395,7 @@
       <img id="modal-img" src="/placeholder.svg?height=400&width=400" alt="Thanapat Butsai" class="modal-image">
     </div>
   </div>
+  <script src="pwa.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
