@@ -16,8 +16,13 @@
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="/images/Logo.png">
   
+  <!-- Font Stylesheet -->
+  <link rel="stylesheet" href="fonts.css"/>
+  
   <!-- Existing Links -->
   <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="internship-details.css"/>
+  <link rel="stylesheet" href="enhanced-button.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
@@ -52,21 +57,21 @@
           <div class="navbar-right">
             <nav class="nav-links">
               <a href="#about">About</a>
-              <a href="#education">Education</a>
               <a href="#experience">Experience</a>
+              <a href="#courses">Academic</a>
+              <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
-              
             </nav>
             <div class="dropdown">
               <button class="dropdown-toggle nav-dropdown">
                 <i class="fas fa-download"></i>
               </button>
               <div class="dropdown-menu">
-                <a href="docs/ThanapatButsai_CV.pdf" class="dropdown-item" id="download-resume" download>
-                  <i class="fas fa-file-alt"></i> Resume
+                <a href="https://drive.google.com/file/d/1Z5_4xcch5KeRlRbV24gUxr2lGLshTbyB/view?usp=sharing" class="dropdown-item" id="download-resume" download>
+                  <i class="fas fa-file-alt"></i>Resume
                 </a>
-                <a href="docs/ThanapatButsai_Transcript.pdf" class="dropdown-item" id="download-transcript" download>
-                  <i class="fas fa-graduation-cap"></i> Transcript
+                <a href="https://drive.google.com/file/d/1xze8uTj9H7jJ5QdeGDHaVU-2a0CSyE65/view?usp=sharing" class="dropdown-item" id="download-transcript" download>
+                  <i class="fas fa-graduation-cap"></i>Transcript
                 </a>
               </div>
             </div>
@@ -82,7 +87,21 @@
       <section id="hero">
         <div class="hero-content">
           <h2>Building <span class="accent">intelligent</span> solutions with code</h2>
-          <p>Computer Science student interesting in AI and full-stack development</p>
+          <p>Computer Science student specializing in AI and full-stack development</p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">3.0</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">72K+</span>
+              <span class="stat-label">Salesforce Points</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -92,6 +111,7 @@
           <div class="about-text">
             <p>I'm Thanapat Butsai, a Computer Science student at Kasetsart University with a strong passion for AI, full-stack development, and 3D computer vision.</p>
             <p>My focus is on creating intelligent applications that solve real-world problems through innovative technology solutions.</p>
+            <p>With experience in research and software development, I combine theoretical knowledge with practical skills to build robust and user-friendly applications.</p>
           </div>
           <div class="skills">
             <h3>Technical Skills</h3>
@@ -105,6 +125,9 @@
               <span class="skill-tag">PyTorch</span>
               <span class="skill-tag">Git</span>
               <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Selenium</span>
+              <span class="skill-tag">3D Modeling</span>
             </div>
           </div>
         </div>
@@ -115,6 +138,7 @@
             <li><strong>Salesforce Trailblazer Rank:</strong> Mountaineer (72,175 Points)</li>
             <li><strong>Languages:</strong> Thai (Native), English (Intermediate - CEFR B1)</li>
             <li><strong>Website:</strong> <a href="https://tanapatbutsai.github.io" target="_blank">tanapatbutsai.github.io</a></li>
+            <li><strong>Research Interests:</strong> 3D Computer Vision, Machine Learning, Software Engineering</li>
           </ul>
         </div>
       </section>
@@ -152,63 +176,96 @@
             <li>Conducted research on 3D Object-Level Classification, analyzing the internal structures of 3D models.</li>
             <li>Developed a robust pipeline for data preprocessing, feature extraction, and 3D object validation using Python, Trimesh, and PyTorch.</li>
             <li>Optimized and implemented machine learning and deep learning models for 3D model classification tasks.</li>
+            <li>Collaborated with international researchers to develop innovative approaches to 3D computer vision problems.</li>
           </ul>
+          
+          <!-- Add this button to open the detailed modal -->
+          
           <div class="experience-gallery">
             <img src="images\intern_1.JPG?height=200&width=300" alt="YZU Research 1" class="gallery-img">
             <img src="images\intern_2.JPG?height=200&width=300" alt="YZU Research 2" class="gallery-img">
             <img src="images\Intern_3.JPG?height=200&width=300" alt="YZU Research 3" class="gallery-img">
-            <img src="images\Intern_4.jpg?height=200&width=300" alt="YZU Research 1" class="gallery-img">
-
+            <img src="images\Intern_4.jpg?height=200&width=300" alt="YZU Research 4" class="gallery-img">
           </div>
+
+
+          <button id="view-internship-details" class="view-details-btn pulse">
+            <span class="btn-text">View Research Details</span>
+            <i class="fas fa-external-link-alt"></i>
+          </button>
         </div>
       </section>
 
-      <section id="gallery" class="section-container">
-        <h2 class="section-title">Photo Gallery</h2>
-        <div class="gallery-container">
-          <div class="gallery-wrapper">
-            <div class="gallery-track">
-              <!-- First set of images -->
-              <div class="gallery-slide">
-                <img src="images\gallery\IMG_6134.JPG" alt="Gallery Image 1" class="gallery-image">
-              </div>
-              <div class="gallery-slide">
-                <img src="images\gallery\IMG_5510.JPG" alt="Gallery Image 2" class="gallery-image">
-              </div>
-              <div class="gallery-slide">
-                <img src="images\gallery\IMG_3462.JPG" alt="Gallery Image 3" class="gallery-image">
-              </div>
-              <div class="gallery-slide">
-                <img src="images\gallery\ieqw.JPG" alt="Gallery Image 4" class="gallery-image">
-              </div>
-              
-              <!-- Second set of images (duplicates for continuous scrolling) -->
-              <div class="gallery-slide">
-                <img src="images\project-glasses-1.png" alt="Gallery Image 5" class="gallery-image">
-              </div>
-              <div class="gallery-slide">
-                <img src="images/gallery/temp.png" alt="Gallery Image 6" class="gallery-image">
-              </div>
-              <div class="gallery-slide">
-                <img src="images/gallery/temp.png" alt="Gallery Image 7" class="gallery-image">
-              </div>
-              <div class="gallery-slide">
-                <img src="images/gallery/temp.png" alt="Gallery Image 8" class="gallery-image">
-              </div>
-            </div>
+      <section id="courses" class="section-container">
+        <h2 class="section-title">Relevant Courses</h2>
+        <div class="courses-hexagon-container">
+          <div class="courses-intro">
+            <p>Key academic courses that have shaped my technical expertise and professional development</p>
           </div>
           
-          <div class="gallery-controls">
-            <button class="gallery-control prev" aria-label="Previous images">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <div class="gallery-indicators">
-              <span class="gallery-indicator active"></span>
-              <span class="gallery-indicator"></span>
+          <div class="hexagon-grid">
+            <div class="hexagon-item">
+              <div class="hexagon-content">
+                <div class="hexagon-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h3>Database Systems</h3>
+              </div>
             </div>
-            <button class="gallery-control next" aria-label="Next images">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+            
+            <div class="hexagon-item">
+              <div class="hexagon-content">
+                <div class="hexagon-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Information Quality Management</h3>
+              </div>
+            </div>
+            
+            <div class="hexagon-item">
+              <div class="hexagon-content">
+                <div class="hexagon-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <h3>Artificial Intelligence</h3>
+              </div>
+            </div>
+            
+            <div class="hexagon-item">
+              <div class="hexagon-content">
+                <div class="hexagon-icon">
+                  <i class="fas fa-code-branch"></i>
+                </div>
+                <h3>Software Engineering</h3>
+              </div>
+            </div>
+            
+            <div class="hexagon-item">
+              <div class="hexagon-content">
+                <div class="hexagon-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Business Data & Report Management</h3>
+              </div>
+            </div>
+            
+            <div class="hexagon-item">
+              <div class="hexagon-content">
+                <div class="hexagon-icon">
+                  <i class="fas fa-coins"></i>
+                </div>
+                <h3>Financial & Banking IT</h3>
+              </div>
+            </div>
+            
+            <div class="hexagon-item">
+              <div class="hexagon-content">
+                <div class="hexagon-icon">
+                  <i class="fas fa-sitemap"></i>
+                </div>
+                <h3>System Analysis & Design</h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -252,7 +309,7 @@
                 <span class="tech-tag">Business Process Diagrams</span>
               </div>
               <div class="project-links">
-                <a href="#" class="project-link">
+                <a href="https://github.com/TanapatButsai/Crownseal-Project.git" target="_blank" class="project-link">
                   <i class="fab fa-github"></i> GitHub
                 </a>
               </div>
@@ -274,7 +331,7 @@
                 <span class="tech-tag">MySQL</span>
               </div>
               <div class="project-links">
-                <a href="#" class="project-link">
+                <a href="https://github.com/TanapatButsai/YakiWebsite.git" target="_blank" class="project-link">
                   <i class="fab fa-github"></i> GitHub
                 </a>
               </div>
@@ -294,7 +351,7 @@
                 <span class="tech-tag">Git</span>
               </div>
               <div class="project-links">
-                <a href="#" class="project-link">
+                <a href="https://github.com/CS211-651/project211-dingtwo" target="_blank" class="project-link">
                   <i class="fab fa-github"></i> GitHub
                 </a>
               </div>
@@ -317,7 +374,7 @@
                 <span class="tech-tag">Google Colab</span>
               </div>
               <div class="project-links">
-                <a href="#" class="project-link">
+                <a href="https://github.com/TanapatButsai/Mini-project-2-Apple-forecasting-.git" target="_blank" class="project-link">
                   <i class="fab fa-github"></i> GitHub
                 </a>
               </div>
@@ -394,7 +451,151 @@
       <img id="modal-img" src="/placeholder.svg?height=400&width=400" alt="Thanapat Butsai" class="modal-image">
     </div>
   </div>
+  
+  <!-- Include the internship modal HTML -->
+  <!-- This should be placed right before the closing body tag -->
+  <!-- The content of internship-modal.html goes here -->
+  
   <script src="pwa.js"></script>
   <script src="script.js"></script>
+  <script src="internship-details.js"></script>
+
+  <!-- Internship Details Modal -->
+<div id="internship-modal" class="internship-modal">
+  <div class="internship-modal-content">
+    <span class="close-internship-modal">&times;</span>
+    
+    <div class="internship-modal-header">
+      <h2>3D Mesh Layout Classification Research</h2>
+      <p>Research Assistant Internship at Yuan Ze University, Taiwan (September 2024 – January 2025)</p>
+    </div>
+    
+    <div class="internship-section">
+      <h3>Research Overview</h3>
+      <p>During my internship at Yuan Ze University, I contributed to a research project focused on classifying the quality of 3D object layouts using machine learning and deep learning approaches. The research addressed the challenge of ensuring quality in 3D object models for applications in computer vision, mixed reality, and graphics.</p>
+      <p>Our study evaluated the performance of various classification models on six diverse datasets, providing insights into optimizing classification pipelines for 3D models.</p>
+    </div>
+    
+    <div class="internship-section">
+      <h3>Datasets</h3>
+      <p>We worked with six diverse datasets containing 3D object models with layout quality annotations:</p>
+      
+      <div class="table-responsive">
+        <table class="dataset-table">
+          <thead>
+            <tr>
+              <th>Dataset</th>
+              <th>Samples</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3D-FUTURE</td>
+              <td>16,564</td>
+              <td>Layout levels and confidence annotated by two persons</td>
+            </tr>
+            <tr>
+              <td>ABO</td>
+              <td>7,952</td>
+              <td>Rich annotations including layout and inside levels with confidence scores</td>
+            </tr>
+            <tr>
+              <td>HermanMiller</td>
+              <td>1,589</td>
+              <td>Specific layout and inside level annotations with confidence</td>
+            </tr>
+            <tr>
+              <td>IKEA</td>
+              <td>477</td>
+              <td>Layout and inside levels per object, linking to folders</td>
+            </tr>
+            <tr>
+              <td>Pix3D</td>
+              <td>395</td>
+              <td>Detailed layout levels annotated by four people</td>
+            </tr>
+            <tr>
+              <td>ShapeNetCore</td>
+              <td>51,507</td>
+              <td>Extensive layout annotations from up to seven annotators</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <p>My responsibilities included data preprocessing, validation, and ensuring consistency between annotations and object files.</p>
+    </div>
+    
+    <div class="internship-section">
+      <h3>Methodology</h3>
+      <p>We implemented and evaluated five different classification models:</p>
+      
+      <div class="model-comparison">
+        <div class="model-card">
+          <h4>Traditional Machine Learning</h4>
+          <p><strong>SVM:</strong> Support Vector Machine for finding optimal hyperplanes to separate classes</p>
+          <p><strong>Random Forest:</strong> Ensemble method combining multiple decision trees</p>
+          <p><strong>XGBoost:</strong> Advanced gradient-boosting algorithm optimizing predictive performance</p>
+        </div>
+        
+        <div class="model-card">
+          <h4>Deep Learning Architectures</h4>
+          <p><strong>PointNet:</strong> Processes point clouds directly using shared MLPs and max-pooling</p>
+          <p><strong>PointNet++:</strong> Extends PointNet with hierarchical feature learning</p>
+          <p><strong>MeshNet:</strong> Processes meshes using their geometric and structural properties</p>
+        </div>
+      </div>
+      
+      <p>I was primarily responsible for implementing the data preprocessing pipeline, feature extraction, and model evaluation components. This included:</p>
+      <ul>
+        <li>Developing robust data validation procedures to ensure consistency between annotations and 3D models</li>
+        <li>Implementing coordinate standardization and scaling to normalize 3D objects</li>
+        <li>Extracting geometric features from 3D meshes for traditional machine learning models</li>
+        <li>Assisting with the implementation and optimization of deep learning architectures</li>
+      </ul>
+    </div>
+    
+    <div class="internship-section">
+      <h3>Key Findings</h3>
+      
+      <div class="results-highlight">
+        <h4>Model Performance</h4>
+        <p>MeshNet emerged as the top performer across most datasets, achieving up to 96% accuracy on the Pix3D dataset. PointNet++ consistently outperformed PointNet, demonstrating the importance of hierarchical feature learning for 3D object classification.</p>
+      </div>
+      
+      <p>Other significant findings included:</p>
+      <ul>
+        <li>Deep learning models (PointNet, PointNet++, MeshNet) consistently outperformed traditional machine learning approaches on complex 3D data</li>
+        <li>MeshNet's ability to process both vertices and normals provided a significant advantage in capturing fine-grained geometric details</li>
+        <li>Data augmentation techniques significantly improved model generalization, particularly for MeshNet</li>
+        <li>Early stopping and dropout layers effectively controlled overfitting in deep learning models</li>
+      </ul>
+    </div>
+    
+    <div class="internship-section">
+      <h3>My Contributions</h3>
+      <ul>
+        <li>Developed a robust pipeline for data preprocessing, feature extraction, and 3D object validation using Python, Trimesh, and PyTorch</li>
+        <li>Implemented coordinate standardization and scaling procedures to normalize 3D objects</li>
+        <li>Assisted in the implementation and optimization of machine learning and deep learning models</li>
+        <li>Conducted comprehensive model evaluation and performance analysis</li>
+        <li>Collaborated with international researchers to develop innovative approaches to 3D computer vision problems</li>
+      </ul>
+    </div>
+    
+    <div class="internship-section">
+      <h3>Skills Developed</h3>
+      <ul>
+        <li>Advanced 3D data processing and feature extraction techniques</li>
+        <li>Implementation and optimization of deep learning architectures for 3D data</li>
+        <li>Comprehensive model evaluation and performance analysis</li>
+        <li>Collaborative research in an international environment</li>
+        <li>Technical documentation and research paper writing</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
